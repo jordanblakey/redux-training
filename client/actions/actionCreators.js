@@ -1,5 +1,5 @@
 // Increment Comment
-function increment(index) {
+export function increment(index) {
   return {
     type: 'INCREMENT_LIKES',
     index
@@ -7,7 +7,8 @@ function increment(index) {
 }
 
 // Add Comment
-function addComment(postId, author, comment) {
+export function addComment(postId, author, comment) {
+  console.log("Dispatching add comment");
   return {
     type: 'ADD_COMMENT',
     postId,
@@ -17,7 +18,7 @@ function addComment(postId, author, comment) {
 }
 
 // Remove Comment
-function removeComment(postId, i) {
+export function removeComment(postId, i) {
   return {
     type: 'REMOVE_COMMENT',
     i,
