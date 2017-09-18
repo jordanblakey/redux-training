@@ -37,11 +37,18 @@ To create it, pass your root reducing function to createStore.
 Actions are JS Objects that contain the type of function to be dispatched and the minimum information required to supply arguments to it. Or, Actions describe the fact that something happened, but don't specify how the application's state changes in response. This is the job of reducers.
 
 #### Dispatch
+Flux method that mediates state changes between actions and every reducer, which in turn update React state.
 
 #### Reducers
+Does the actual editing of state.
 Actions describe the fact that something happened, but don't specify how the application's state changes in response. This is the job of reducers.
 
 // A reducer takes in 2 things:
 // 1. The action
 // 2. A copy of the current state
 // 3. Returns an updated copy of the store
+
+#### Redux Connect
+Replaces default passing of props from parent to child components to a flat hierarchy.
+
+Using connect() we pass in methods mapStateToProps and mapDispatchToProps and also the Main component, which are then bound to the App component (the real main component)
