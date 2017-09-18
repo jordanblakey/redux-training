@@ -1,6 +1,15 @@
 # redux-training
 A simple photo app that simplifie the core ideas behind Redux, React Router and React.js
 
+## About Redux
+Redux is a predictable state container for JavaScript apps.
+(If you're looking for a WordPress framework, check out Redux Framework.)
+
+It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+
+You can use Redux together with React, or with any other view library.
+It is tiny (2kB, including dependencies).
+
 ## Running
 
 First `npm install` to grab all the necessary dependencies.
